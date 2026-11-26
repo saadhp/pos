@@ -1,0 +1,100 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-26 12:00+0000\n"
+"PO-Revision-Date: 2026-11-26 12:00+0000\n"
+"Last-Translator: Saad Elbahi\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. module: pos_payment_method_live_assign
+msgid "Assign to POS"
+msgstr "ربط بنقاط البيع"
+
+#. module: pos_payment_method_live_assign
+msgid "Assign Payment Method to POS"
+msgstr "إضافة طريقة الدفع لنقاط البيع"
+
+#. module: pos_payment_method_live_assign
+msgid "Linked Points of Sale"
+msgstr "نقاط البيع المرتبطة"
+
+#. module: pos_payment_method_live_assign
+msgid "Payment Method"
+msgstr "طريقة الدفع"
+
+#. module: pos_payment_method_live_assign
+msgid "Assigned POS"
+msgstr "نقاط البيع المفعلة حالياً"
+
+#. module: pos_payment_method_live_assign
+msgid "POS to Assign"
+msgstr "نقاط البيع المطلوب الإضافة إليها"
+
+#. module: pos_payment_method_live_assign
+msgid "Open Sessions"
+msgstr "الجلسات المفتوحة"
+
+#. module: pos_payment_method_live_assign
+msgid "Apply"
+msgstr "تأكيد الإضافة"
+
+#. module: pos_payment_method_live_assign
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: pos_payment_method_live_assign
+msgid "Saved"
+msgstr "تم الحفظ"
+
+#. module: pos_payment_method_live_assign
+msgid "No additional POS selected."
+msgstr "لم يتم اختيار نقاط بيع إضافية."
+
+#. module: pos_payment_method_live_assign
+msgid "Please select at least one POS configuration."
+msgstr "يرجى اختيار نقطة بيع واحدة على الأقل."
+
+#. module: pos_payment_method_live_assign
+msgid "Selected POS: %(total)s (Open sessions: %(open)s, Closed: %(closed)s)"
+msgstr "إجمالي نقاط البيع المختارة: %(total)s (بجلسة مفتوحة: %(open)s، مغلقة: %(closed)s)"
+
+#. module: pos_payment_method_live_assign
+msgid "Assigned payment method (%(pm)s) to %(total)s POS (%(open)s with open sessions)."
+msgstr "تم ربط طريقة الدفع (%(pm)s) بعدد %(total)s نقطة بيع (%(open)s منها بجلسة مفتوحة)."
+
+#. module: pos_payment_method_live_assign
+msgid "Cash payment method (%s) cannot be added while a session is open. Only non-cash payment methods are allowed."
+msgstr "لا يمكن إضافة طريقة دفع نقدية (%s) أثناء وجود جلسة مفتوحة. يسمح فقط بطرق الدفع غير النقدية."
+
+#. module: pos_payment_method_live_assign
+msgid "Please configure an accounting journal on payment method (%s) first."
+msgstr "يرجى تحديد دفتر اليومية المحاسبي على طريقة الدفع (%s) أولاً."
+
+#. module: pos_payment_method_live_assign
+msgid "Cannot remove existing payment method (%(methods)s) from POS (%(pos)s) while a session is open."
+msgstr "لا يمكن إزالة طريقة دفع حالية (%(methods)s) من نقطة البيع (%(pos)s) أثناء فتح الجلسة."
+
+#. module: pos_payment_method_live_assign
+msgid "Cannot unlink payment method (%(method)s) from POS with open sessions: %(pos)s"
+msgstr "لا يمكن إلغاء ربط طريقة الدفع (%(method)s) من نقاط بيع لديها جلسات مفتوحة: %(pos)s"
+
+#. module: pos_payment_method_live_assign
+msgid "Cash payment method (%s) cannot be assigned during open sessions."
+msgstr "لا يسمح بإضافة طرق الدفع النقدية (%s) أثناء وجود جلسات مفتوحة."
+
+#. module: pos_payment_method_live_assign
+msgid "Payment method added during open session: <b>%(methods)s</b> by %(user)s (%(timestamp)s UTC)"
+msgstr "تمت إضافة طريقة الدفع أثناء الجلسة المفتوحة: <b>%(methods)s</b> بواسطة %(user)s (%(timestamp)s UTC)"
+
+#. module: pos_payment_method_live_assign
+msgid "New payment method added: %s"
+msgstr "تمت إضافة طريقة دفع جديدة: %s"
+
+#. module: pos_payment_method_live_assign
+msgid "Non-cash payment methods can be added while a session is open. Existing methods can only be removed after closing the session."
+msgstr "يسمح بإضافة طرق دفع غير نقدية أثناء فتح الجلسة، ولا يسمح بحذف الطرق الحالية إلا بعد إغلاق الجلسة."

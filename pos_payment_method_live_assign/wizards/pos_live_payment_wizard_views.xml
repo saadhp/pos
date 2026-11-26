@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_pos_live_payment_wizard_form" model="ir.ui.view">
+        <field name="name">pos.live.payment.wizard.form</field>
+        <field name="model">pos.live.payment.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Assign Payment Method to POS">
+                <group>
+                    <field name="company_id" invisible="1" />
+                    <field name="payment_method_id" options="{'no_create': True}" />
+                    <field
+                        name="existing_config_ids"
+                        widget="many2many_tags"
+                        readonly="1"
+                    />
+                    <field
+                        name="target_config_ids"
+                        widget="many2many_tags"
+                        options="{'no_create': True}"
+                    />
+                    <field name="open_sessions_summary" readonly="1" />
+                </group>
+                <footer>
+                    <button
+                        name="action_apply_live_payment_method"
+                        type="object"
+                        string="Apply"
+                        class="btn-primary"
+                        invisible="not target_config_ids"
+                    />
+                    <button string="Cancel" special="cancel" class="btn-secondary" />
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

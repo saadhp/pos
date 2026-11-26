@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="pos_payment_method_view_form_live_inherit" model="ir.ui.view">
+        <field name="name">pos.payment.method.form.live.assign</field>
+        <field name="model">pos.payment.method</field>
+        <field name="inherit_id" ref="point_of_sale.pos_payment_method_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//form/sheet" position="before">
+                <header>
+                    <field name="is_cash_count" invisible="1" />
+                    <button
+                        name="action_open_live_assign_wizard"
+                        type="object"
+                        string="Assign to POS"
+                        class="btn-primary"
+                        groups="point_of_sale.group_pos_manager"
+                        invisible="is_cash_count or not id"
+                    />
+                </header>
+            </xpath>
+            <xpath expr="//group[@name='Payment methods']" position="after">
+                <group string="Linked Points of Sale">
+                    <field
+                        name="config_ids"
+                        widget="many2many_tags"
+                        options="{'no_create': True}"
+                    />
+                    <field
+                        name="open_session_ids"
+                        widget="many2many_tags"
+                        readonly="1"
+                    />
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="pos_payment_method_view_tree_live_inherit" model="ir.ui.view">
+        <field name="name">pos.payment.method.list.live.assign</field>
+        <field name="model">pos.payment.method</field>
+        <field name="inherit_id" ref="point_of_sale.pos_payment_method_view_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='config_ids']" position="after">
+                <field name="is_cash_count" column_invisible="True" />
+                <button
+                    name="action_open_live_assign_wizard"
+                    type="object"
+                    string="Assign to POS"
+                    class="btn-link"
+                    groups="point_of_sale.group_pos_manager"
+                    invisible="is_cash_count"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
